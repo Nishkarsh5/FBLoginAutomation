@@ -17,9 +17,9 @@ class FBlogin(unittest.TestCase):
 		facebookPassword	=	'password'	#Replace it with your password.
 		
 		emailFieldID		=	"email"
-		passFieldID			=	"pass"
+		passFieldID		=	"pass"
 		loginButtonXpath	=	'//input[@value="Log In"]'
-		fbLogoXpath			=	'//a(contains[@href, "logo"])[1]'
+		fbLogoXpath		=	'//a(contains[@href, "logo"])[1]'
 
 		emailFieldElement	= 	WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id(emailFieldID))
 		passFieldElement	=	WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id(passFieldID))
